@@ -1,0 +1,54 @@
+.background_modal_settings{
+ position: absolute;
+ width: 100vw;
+ height: 100vh;
+ padding-bottom: 70px;   
+ background-color: var(--main-background-color);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.background_modal_settings_contnent{
+width: 300px;
+height: 300px;
+background-color: var(--main-header-background-color);
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+text-align: center;
+color: var(--font-workouts)
+}
+.modal_settings_buttons{
+margin-top: 50px;    
+display: flex;
+flex-direction: row;
+}
+.modal_settings_buttons button{
+margin: 10px;    
+height: 35px;
+width: 100px;
+border: none;
+background-color: var(--button-form-color);
+cursor: pointer;
+border-radius: 5px;
+outline: none;
+}
+.verify_email_text{
+font-size: 1.2rem;
+font-weight: 200;
+margin-bottom: 30px;
+width: 90%;
+}
+@media(min-width: 769px){
+.background_modal_settings{
+ padding-bottom: 0;
+ padding-left: 70px;   
+}
+.background_modal_settings_contnent{
+width: 500px;
+height: 300px;
+}
+}

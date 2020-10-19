@@ -1,0 +1,159 @@
+{
+    "exercises": [
+        {
+            "id": 0,
+            "value": "Oblique twist",
+            "name": "Oblique twist"
+        },
+        {
+            "id": 1,
+            "value": "Benchpress",
+            "name": "Benchpress"
+        },
+        {
+            "id": 2,
+            "value": "Deadlift",
+            "name": "Deadlift"
+        },
+        {
+            "id": 3,
+            "value": "Squat",
+            "name": "Squat"
+        },
+        {
+            "id": 4,
+            "value": "Tricep pulldown",
+            "name": "Tricep pulldown"
+        },
+        {
+            "id": 5,
+            "value": "Pulley crunch",
+            "name": "Pulley crunch"
+        },
+        {
+            "id": 6,
+            "value": "Floor crunch",
+            "name": "Floor crunch"
+        },
+        {
+            "id": 7,
+            "value": "Overhead tricep extension",
+            "name": "Overhead tricep extension"
+        },
+        {
+            "id": 8,
+            "value": "Dumbbell press",
+            "name": "Dumbbell press"
+        },
+        {
+            "id": 9,
+            "value": "Forearm curl back",
+            "name": "Forearm curl back"
+        },
+        {
+            "id": 10,
+            "value": "Forearm curl in",
+            "name": "Forearm curl in"
+        },
+        {
+            "id": 11,
+            "value": "Seated pulley row",
+            "name": "Seated pulley row"
+        },
+        {
+            "id": 12,
+            "value": "Shrug",
+            "name": "Shrug"
+        },
+        {
+            "id": 13,
+            "value": "Calf raise",
+            "name": "Calf raise"
+        },
+        {
+            "id": 14,
+            "value": "Dumbbell romanian deadlift",
+            "name": "Dumbbell romanian deadlift"
+        },
+        {
+            "id": 15,
+            "value": "Forearm curl up (25 reps)",
+            "name": "Forearm curl up (25 reps)"
+        },
+        {
+            "id": 16,
+            "value": "Dumbbell squat",
+            "name": "Dumbbell squat"
+        },
+        {
+            "id": 17,
+            "value": "Front raise",
+            "name": "Front raise"
+        },
+        {
+            "id": 18,
+            "value": "Julian tricep extension",
+            "name": "Julian tricep extension"
+        },
+        {
+            "id": 19,
+            "value": "Bicep curl",
+            "name": "Bicep curl"
+        },
+        {
+            "id": 20,
+            "value": "Dumbbell incline press",
+            "name": "Dumbbell incline press"
+        },
+        {
+            "id": 21,
+            "value": "Hammer pulley curls 2h",
+            "name": "Hammer pulley curls 2h"
+        },
+        {
+            "id": 22,
+            "value": "Side raise",
+            "name": "Side raise"
+        },
+        {
+            "id": 23,
+            "value": "Hand grippers",
+            "name": "Hand grippers"
+        },
+        {
+            "id": 24,
+            "value": "Dumbbell shoulder press",
+            "name": "Dumbbell shoulder press"
+        },
+        {
+            "id": 25,
+            "value": "Overhead press",
+            "name": "Overhead press"
+        },
+        {
+            "id": 26,
+            "value": "Hamstring curl",
+            "name": "Hamstring curl"
+        },
+        {
+            "id": 27,
+            "value": "Lat pulldown",
+            "name": "Lat pulldown"
+        },
+        {
+            "id": 28,
+            "value": "Hanging leg raise",
+            "name": "Hanging leg raise"
+        },
+        {
+            "id": 29,
+            "value": "Pulling up narrow grip",
+            "name": "Pulling up narrow grip"
+        },
+        {
+            "id": 30,
+            "value": "Pulling up wide grip",
+            "name": "Pulling up wide grip"
+        }
+    ]
+}

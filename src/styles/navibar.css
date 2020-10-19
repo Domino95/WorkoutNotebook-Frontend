@@ -1,0 +1,140 @@
+.navbar{
+bottom: 0;
+width: 100vw;
+height: 55px;
+background-color:rgba(33,33,33);
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 13px 0px;
+position: fixed;
+transition: 300ms ease;
+z-index: 1;
+overflow: hidden;
+}
+.logo{ 
+display: none;
+}
+.navbar_nav{
+padding: 0;
+margin:0;
+display: flex;
+flex-direction: row;
+list-style: none;
+height: 100%;
+width: 100%;
+flex-direction: row;
+justify-content: space-around;
+outline: none;
+}
+.nav_item{
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-direction: column;
+transition: 200ms ease;
+outline: none;
+cursor: pointer;
+}
+.nav_item a{
+display: flex;
+align-items: center;
+flex-direction: column;
+transition: 200ms ease;
+outline: none;
+}
+.nav_item:hover svg{ 
+  fill: #ffd901;
+}
+
+.nav_item:hover .link_text{
+color: white;
+transition: 100ms ease;
+}
+.nav_item svg{ 
+display: flex;
+min-width: 40px;
+height: 32px;
+width: 32px;
+}
+.nav_item:nth-child(4) svg {
+display: flex;
+min-width: 40px;
+height: 35px;
+width: 40px;
+}
+.link_text{
+font-weight: 200;
+font-size: 0.7rem;
+color: #969292;
+}
+a.active svg {
+fill: #ffd901;
+}
+@media (min-width: 769px){
+.navbar{
+width: 70px;
+height: 100vh;
+padding-top:20px;
+padding-bottom:10px;
+}
+.navbar_nav{
+flex-direction: column;
+height: 100%;
+padding-left: 13px;
+}
+.nav_item{
+margin-bottom: 20px;
+flex-direction: row;
+justify-content: unset;
+}
+.nav_item:nth-child(4){
+margin-bottom: 10px;
+flex-direction: row;
+justify-content: unset;
+}
+.nav_item svg{
+height: 35px;
+width: 35px;
+}
+
+.nav_item:nth-child(4) svg path {
+  height: 40px;
+  width: 40px;
+}
+
+.nav_item a { 
+padding-bottom: 20px;
+flex-direction: row;
+width: 100%;
+height: 100%;
+}
+.nav_item:nth-child(6){
+margin-top: auto;
+margin-bottom: 0;
+} 
+.link_text{
+display: none;
+margin-left: 10px;
+color: #969292;
+transition: 300ms ease !important;
+font-size: 1rem;
+}
+.logo{
+margin-bottom: 20px;
+display: block;
+}
+.logo svg{
+transform: rotate(0 deg);
+transition: 300ms ease;
+fill: #ffd901;
+}
+.navbar:hover .logo svg{
+transform: rotate(-180deg);
+transition: 300ms ease;
+}
+.navbar:hover{
+width: 150px;
+}
+.navbar:hover .link_text{
+  display: block;
+  transition-duration: 300ms;
+}  
+}

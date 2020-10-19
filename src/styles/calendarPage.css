@@ -1,0 +1,209 @@
+.calendar_background{
+height: 100vh;
+width: calc(100vw - 70px);
+margin-left: 70px;
+position: relative;
+}
+header {
+display: block;
+width: 100%;
+padding: 1.75em 0;
+}
+/* GRID */
+.row {
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+}
+.column {
+flex-grow: 1;
+flex-basis: 0;
+max-width: 100%;
+}
+.column.col-center{
+display: flex;
+justify-content: center;
+width: calc(100%/7)
+}
+
+.calendar {
+display: block;
+position: absolute;
+width: 70%;
+max-width: 1000px;
+background: var(--main-header-background-color);
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px;
+color: var(--font_calendar_color);
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+transition: 300ms ease;
+}
+.calendar .header {
+text-transform: uppercase;
+font-weight: 200;
+font-size: 1.5rem;
+padding: 1.5em 0;
+border-bottom: 1px solid var(--border-calendar);
+text-align: center
+}
+.calendar .header .icon {
+font-size: 2em;
+cursor: pointer;
+transition: .15s ease-out;
+display: flex;
+justify-content: space-around;
+}
+.calendar .header .icon svg{
+fill: #ffd901;
+margin: 0;
+}
+.calendar .days {
+font-weight: 200 !important;
+color: var(--font_calendar_color);
+font-size: 1em;
+padding: .75em 0;
+border-bottom: 1px solid var(--border-calendar);
+}
+.calendar .body .cell {
+position: relative;
+height: 5.5rem;
+border-right: 1px solid var(--border-calendar);
+overflow: hidden;
+background: var(--main-header-background-color);
+transition: 300ms ease;
+
+}
+.calendar .body .selected {
+border-left:15px solid #ffd901;
+}
+.calendar .body .row {
+border-bottom: 1px solid var(--border-calendar);
+}
+.calendar .body .row:last-child {
+border-bottom: none;
+}
+.calendar .body .cell:last-child {
+border-right: none;
+}
+.calendar .body .cell .number {
+position: absolute;
+font-size: 82.5%;
+line-height: 1;
+top: .75em;
+right: .75em;
+font-weight: 500;
+}
+.calendar .body .disabled {
+color:var(--font-calendar-disabled);
+}
+.calendar .body .cell .bg{
+font-weight: 200;
+line-height: 1;
+font-size: 5em;
+height: 100%;
+width: 100%;
+fill: var(--font-workouts);
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+ .calendar .body .cell .bg span  {
+font-size: 1rem;
+text-transform: uppercase;
+font-weight: 200;
+text-align: center;
+cursor: pointer;
+display: flex;
+align-items: center;
+width: 100%;
+height: 100%;
+}
+.calendar .body .cell .bg span  a {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-weight: 200;
+font-size: 1rem;
+position: relative;
+}
+ 
+.calendar .body .cell .bg span a::after  {
+position: absolute;
+height: 100%;
+width: 100%;
+content: url('../images//workout.svg');
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0;
+}
+.calendar .body .cell .bg span:hover {
+background: var(--hover);
+}
+.calendar .body .column {
+flex-grow: 0;
+flex-basis: calc(100%/7);
+width: calc(100%/7);
+}
+@media (max-width: 769px){
+.calendar_background{
+height: calc(100vh - 55px);
+width: 100vw;
+padding-bottom: 70px;
+padding-top: 20px;
+margin-left: 0px;
+position: relative;
+overflow: auto;
+}
+.calendar .body .cell {
+position: relative;
+height: 4.5rem;
+border-right: 1px solid var(--border-calendar);
+overflow: hidden;
+cursor: pointer;
+background: var(--main-header-background-color);
+transition: 300ms ease;
+}
+.calendar .body .cell .bg {
+font-size: 2.2em;
+}
+.calendar .header {
+font-size: 1rem;
+padding: 1.5em 0;
+border-bottom: 1px solid var(--border-calendar);
+align-items: center;
+text-align: center
+}
+.calendar {
+display: block;
+position: absolute;
+width: 98%;
+background: var(--main-header-background-color);
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 13px 0px;
+color: var(--font_calendar_color);
+top:25%;
+left:50%;
+transform: translate(-50%, -25% );
+}
+.calendar .body .cell .number {
+position: absolute;
+font-size: 0.7em;
+line-height: 1;
+top: .35em;
+right: .35em;
+font-weight: 200;
+}
+.calendar .body .selected {
+border-left: 7px solid #ffd901;
+}
+
+}

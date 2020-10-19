@@ -1,0 +1,87 @@
+.select-search {
+    width: 90%;
+    position: relative;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+.select-search__value {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    color: var(--font-workouts);
+    font-size: 1rem;
+}
+.select-search__input {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 16px;
+    background-color:  var(--main-background-color);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
+    color: var(--font-workouts);
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    text-align: center;
+    -webkit-appearance: none;
+}
+.select-search__input::-webkit-search-decoration,
+.select-search__input::-webkit-search-cancel-button,
+.select-search__input::-webkit-search-results-button,
+.select-search__input::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+.select-search__input:not([readonly]):focus {
+    cursor: initial;
+}
+.select-search__select {
+    max-height: 300px;
+    background: var(--main-header-background-color);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+.select-search__options {
+    list-style: none;
+    width: 100%;
+    overflow: auto;
+}
+.select-search__row:not(:first-child) {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+.select-search__option {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: var(--main-header-background-color);
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    color: var(--font-workouts);
+}
+.select-search__option.is-highlighted,
+.select-search__option:not(.is-selected):hover {
+    background: var(--main-background-color);
+}
+.select-search__option.is-highlighted.is-selected,
+.select-search__option.is-selected:hover {
+    background: var(--main-background-color);
+}
+.select-search:not(.select-search--multiple) .select-search__select {
+    position: absolute;
+    z-index: 2;
+    top: 44px;
+    right: 0;
+    left: 0;
+    border-radius: 3px;
+    overflow: auto;
+    max-height: 360px;
+}
+@media (max-width: 769px){
+.select-search {
+    width: 85%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+}

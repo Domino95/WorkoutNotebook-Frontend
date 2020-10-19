@@ -1,0 +1,48 @@
+.settings_background{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-bottom: 55px;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+padding-top: 20px;
+padding-bottom: 70px;
+background-color: var(--main-background-color);
+transition: 300ms ease ;
+}
+.option_settings{
+margin: 20px;
+height: 80px;
+width: 300px; 
+border-bottom: 1px solid var(--font-workouts);
+justify-content: space-between !important;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+cursor: pointer;
+color: var(--font-workouts);
+transition: 300ms ease ;
+}
+.option_settings svg, .option_settings svg g, .option_settings svg g path{
+margin-left: auto;
+height: 40px;
+width: 40px;
+fill: var(--font-workouts);
+transition: 300ms ease;
+}
+.option_settings:hover  svg g path, .option_settings:hover  svg   {
+fill: #ffd901;
+}
+@media (min-width: 769px){
+.settings_background{
+transition: 300ms ease;
+}
+.option_settings{
+width: 450px; 
+
+}
+
+}

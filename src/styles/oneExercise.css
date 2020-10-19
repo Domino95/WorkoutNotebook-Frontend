@@ -1,0 +1,233 @@
+.one_exercise{
+width: 100%;
+font-size: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+padding: 0 10px 0 10px;
+}
+.one_exercise h2{
+font-size: 1.2rem ;
+justify-content: flex-start;
+position: relative;  
+align-items: center;
+}
+.one_exercise h2 svg{
+cursor: pointer;
+margin-left: 10px;
+}
+.property{
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+text-transform: uppercase;
+margin-top: 20px;
+font-size: 1rem;
+position: relative;
+}
+.one_exercise h2::after{
+ position: absolute;  
+ content: "";
+ width: 100%;
+ bottom: -10%;
+ border: none;
+border-bottom: 1px solid var(--font-workouts);
+}
+.property .column{ 
+ display: flex;
+ flex-direction: column;
+ align-items: center ;
+ width: 100%; 
+ font-weight: 200;
+}
+.property .column p{ 
+ width: 100% !important; 
+margin: 2px;
+cursor: pointer;
+text-align: center;
+}
+.property .column h3{ 
+font-weight: 200;
+margin: 5px;
+text-align: center;
+font-size: 1rem;
+}
+.property .column .selected_series{ 
+font-size: 1.3rem;
+margin: 5px;
+color:rgb(33, 228, 150);
+}
+ .selected_series{
+position: relative;
+}
+.selected_series span::after{
+ position: absolute;
+ content: url('../images/delete-24px.svg');
+ top: 10%;
+ right: 0;
+ cursor: pointer;
+ z-index: 10;
+}
+.column svg{
+margin-top: 15px;
+ cursor: pointer;   
+ color: var(--font-workouts);
+ height: 30px;
+ width: 30px;
+ fill: #ffd901
+}
+.add_weight{
+width: auto;
+ display: flex;
+ flex-direction: row !important;
+ justify-content: center; 
+ align-items: center;
+ margin-top: 15px;
+}
+.add_weight input{
+border: none !important;
+outline: none;
+text-align: center;
+margin-bottom: 10px ;
+font-size: 1rem;
+font-weight: 500;
+padding: 5px;
+margin: 0 !important;
+margin-top: 5px !important;
+color: var(--font-workouts);
+border-bottom: 1px solid var(--font-workouts) !important;
+}
+.column input{
+width: 50%;
+border: none;
+outline: none;
+border-bottom: 1px solid var(--font-workouts);
+background-color: var(--main-header-background-color);
+text-align: center;
+font-size: 1rem;
+font-weight: 500;
+margin-bottom: 10px;
+padding: 5px 0 5px 0;
+margin-top: 11px ;
+color: var(--font-workouts);
+display: block;
+}
+.add_weight input::placeholder{
+color: var(--font-workouts);
+}
+.column input::placeholder{
+color: var(--font-workouts);
+}
+.column input::-webkit-outer-spin-button,
+.column input::-webkit-inner-spin-button {
+-webkit-appearance: unset;
+margin: 0;
+}
+.add_weight button{
+width: 30px;
+height: 30px;
+margin-left: 0;
+margin-right: 0;
+border-radius: 50%;
+border: none;
+background-color: #ffd901;
+text-align: center;
+cursor: pointer;
+outline: none;
+font-size: 1rem;
+}
+.add_reps{
+margin-top: 10px;
+display: flex;
+flex-direction: row ;
+justify-content: center ;
+align-items: center ;
+}
+.container_add_reps_buttons{
+ display: flex;
+ justify-content: center;
+}
+.trash{
+margin: 5px !important;
+height:25px !important;
+width: 25px !important;
+}
+@media (min-width: 769px){
+.one_exercise{
+padding: 20px;
+}
+.one_exercise h2{
+font-size: 1.5rem;
+}
+.property{
+font-size: 1rem;
+}
+.property div input{
+font-size: 1rem;
+}
+.add_weight button{
+width: 40px;
+height: 40px; 
+border: none;
+background-color: #ffd901;
+text-align: center;
+cursor: pointer;
+outline: none;
+font-size: 1.2rem;
+margin-left:10px;
+margin-right:10px;
+}
+.add_reps{
+margin-top: 5px;
+}
+.add_reps input{
+margin: 15px;
+}
+.one_exercise h2::after{
+ position: absolute;  
+ content: "";
+ width: 100%;
+ bottom: -10%;
+ left: 0;
+ border: none;
+border-bottom: 1px solid var(--font-workouts);
+}
+.add_weight input{
+width: 30% !important;
+border: none !important;
+outline: none;
+text-align: center;
+margin-bottom: 10px;
+font-size: 1rem;
+font-weight: 500;
+padding: 5px;
+margin: 5px;
+color: var(--font-workouts);
+}
+.column svg{
+height: 40px;
+width: 40px;
+}
+.column input{
+width: 40%;
+border: none;
+outline: none;
+border-bottom: 1px solid black ;
+text-align: center;
+font-size: 1rem;
+font-weight: 500;
+margin-bottom: 10px;
+padding: 5px;
+margin: 14px;
+color: var(--font-workouts);
+border-bottom: 1px solid var(--font-workouts) ;
+transition: 300ms ease;
+display: block;
+}
+.selected_series span::after{
+top: 0%;
+}
+.one_exercise h2{
+margin-left: 0;
+}
+}

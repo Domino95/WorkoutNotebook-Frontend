@@ -1,0 +1,268 @@
+.login_container{
+width: 90vw;
+height:90vh;   
+background: var(--main-header-background-color);
+margin: auto;
+margin-top:5vh;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+border-radius: 20px;
+padding-top:10vh;
+color: var(--font-workouts)
+}
+.login_title{
+width: 100%;
+text-align: center;   
+}
+.login_title h2{
+font-weight: 700;
+font-size: 2rem;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.login_title_login{
+width: 100%;
+text-align: center; 
+padding-top: 20%;  
+}
+.login_title_login h2{ 
+font-weight: 700;
+font-size: 2rem;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+.input_container{
+width: 100%;
+padding: 6px 30px 6px 30px;
+display: inline-grid;
+}
+.group{
+position: relative;
+}
+.input_container input{
+height: 50px;
+width: 100%; 
+border: none;
+border-bottom: 1px solid #999;
+background: var(--main-header-background-color);
+outline: none;
+padding-left: 30px;
+color: var(--font-workouts)
+}
+.input_container label{
+width: 100%;
+}
+.icons svg {
+position: absolute;
+top:23%;
+fill: var(--font-workouts)
+}
+.input_container input:focus {
+border-bottom: 1px solid var(--input_focus);
+color: var(--font-workouts);
+}
+.input_container input:focus::placeholder{
+color: var(--font-workouts);
+}
+.input_container button{
+background-color: var(--button-form-color);
+width: 50%;
+height: 50px;
+outline: none;
+border:1px solid black;
+color: black;
+margin-top:3vh;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+cursor: pointer;
+}
+.switchText{
+font-size: 0.9rem;
+margin-top:30px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.switchText h3{
+margin-left: 10px;
+cursor: pointer;
+color: var(--button-form-color);
+}
+.errorForm{
+margin-top: 3px;
+color: red;
+font-size: 0.8rem;
+height: 17px;
+}
+.errorFormFromServer{
+color: red;
+font-size: 1rem;
+text-align: center;
+margin-bottom: 5px;
+}
+.select_language_container{
+display: flex;
+justify-content: flex-end;
+right: 0;
+align-items: center;
+transition: 300ms ease;
+}
+.select_language_container button{
+width: 50px;
+height: 30px;
+background-color: var(--main-background-color);
+border: none;
+text-align: center;
+margin: 5px;
+cursor: pointer;
+border-bottom: 1px solid gray;
+font-size: 0.8rem;
+outline: none;
+color: var(--font-select-language);
+transition: 300ms ease;
+}
+.select_language_container .selected_language_button{
+border-bottom: 2px solid #ffd901;
+transition: 300ms ease;
+}
+.select_language_container button:hover{
+border-bottom: 2px solid #ffd901;
+}
+.authorization_header{
+display: flex;
+}
+.confirm_email_adress_container {
+opacity: 0;
+margin: 60px 0 0 0px;
+height: 40px;
+color: var(--option-color-font);
+display: flex;
+border-radius: 7px;
+transform: translate(-50%);
+font-size: 1rem;
+min-width: 300px;
+background-color: var(--button-under-bottom-color);
+position: absolute;
+justify-content: center;
+left: 50%;
+align-items: center;
+}
+
+@media (min-width: 769px){
+.login_container_under{
+display: flex;
+width: 750px;
+height:400px;   
+background-color:var(--background-under-color);
+border-radius: 20px;
+position: absolute;
+z-index: -1;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+justify-content: space-around;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px 0px;
+}
+.login_option_select{
+ z-index: -1;   
+color: var(--option-color-font);
+padding-top:150px;
+font-weight: 200px;
+font-size: 1.2rem;
+width: 50%;
+text-align: center;
+}
+.login_option_select button{
+background-color:var(--button-under-bottom-color);
+border: 1px solid var(--option-color-font)  !important;
+height: 50px;
+width: 120px;
+outline: none;
+border: none;
+color: var(--option-color-font);
+margin-top:20px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.login_container{
+position: absolute;
+margin-top: 0;
+z-index: -1;
+left: 50px;
+top: -50px;
+width: 320px;
+height:500px;   
+background: var(--main-header-background-color);
+border-radius: 20px;
+padding-top:20px;
+transition: 0.5s;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
+border: none;
+}
+.input_container button{
+background-color: var(--button-form-color);
+width: 50%;
+height: 50px;
+outline: none;
+color:  black;
+border: none;
+margin-top:10px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 5px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 1px 0px;
+}
+.confirm_email_adress_container{
+position: static;    
+opacity: 0;
+margin: 10px 0 0 20px;
+width: 500px;
+color: var(--option-color-font);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 7px;
+margin-right: 50%;
+transform: translate(50%);
+font-size: 1rem;
+min-width: 210px;
+background-color: var(--button-under-bottom-color);
+transition: 300ms ease ;
+}
+.select_language_container{
+display: flex;
+justify-content: flex-end;
+right:0;
+transition: 300ms ease ;
+}
+.select_language_container button{
+width: 80px;
+height: 40px;
+background-color: var(--main-background-color);
+border: none;
+text-align: center;
+margin: 5px;
+cursor: pointer;
+border-bottom: 1px solid gray;
+font-size: 1rem;
+outline: none;
+color: var(--font-select-language);
+transition: 300ms ease ;
+}
+.select_language_container .selected_language_button{
+border-bottom: 3px solid #ffd901;
+transition: 300ms ease ;
+}
+.select_language_container button:hover{
+border-bottom: 3px solid #ffd901;
+}
+.authorization_header{
+display: flex;
+}
+} 

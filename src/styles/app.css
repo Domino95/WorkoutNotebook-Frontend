@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+  a:-webkit-any-link {
+    color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: var(--main-background-color);
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  :root {
+    --main-background-color:  #171717;
+    --button-form-color: #ffd901;
+    --background-under-color: #ffd901;
+    --button-under-bottom-color: #ffd901;
+    --option-color-font: black;
+    --border_and_font_color_form_button: black;
+    --font-select-language: white;
+    --main-header-background-color: rgba(33,33,33);
+    --font_calendar_color: #969292;
+    --border-calendar: black;
+    --font-calendar-disabled: #96929231;
+    --font-workouts:#969292;
+    --input_focus: white;
+    --hover:  #171717;;
+  }
+  :root[data-theme="light"]  {
+    --main-background-color: #eee;
+    --button-form-color: #ffd901;
+    --background-under-color: #ffd901;
+    --button-under-bottom-color: #ffd901;
+    --option-color-font: black;
+    --border_and_font_color_form_button: black;
+    --font-select-language: black;
+    --main-header-background-color:#fff;
+    --font_calendar_color: black;
+    --border-calendar: #969292;
+    --font-calendar-disabled: lightgray;
+    --font-workouts: black;
+    --input_focus: black;
+    --hover: #e8e8e8;
+  }
