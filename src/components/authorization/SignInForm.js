@@ -32,7 +32,7 @@ const SignInForm = ({ email, password, setemail, setpassword, setuserId }) => {
                     }
                   }`
             }
-            fetch('http://localhost:4000/graphql', {
+            fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
                 method: 'POST',
                 body: JSON.stringify(requestObject),
                 headers: {
