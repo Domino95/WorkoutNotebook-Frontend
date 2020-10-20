@@ -12,17 +12,18 @@ const AuthorizationMobile = (props) => {
     }
     return (
         <>
-            <div className="authorization_header">
+            <div className="authorization_background">
+                < div className="login_container" >
+                    <div className={loginView ? "login_title_login" : "login_title"}>
+                        <h2 >{loginView ? words.SignIn : words.SignUp}</h2>
+                    </div>
+                    <AuthComponent setuserId={props.setuserId} handleSetForm={handleSetForm} loginView={loginView} />
+                    <div className="switchText">
+                        <p>{loginView ? words.DontHaveAccount : words.HaveAccount}</p>
+                        <h3 onClick={handleSetForm}>{loginView ? words.SignUp : words.SignIn}</h3></div>
+                </div >
             </div>
-            < div className="login_container" >
-                <div className={loginView ? "login_title_login" : "login_title"}>
-                    <h2 >{loginView ? words.SignIn : words.SignUp}</h2>
-                </div>
-                <AuthComponent setuserId={props.setuserId} handleSetForm={handleSetForm} loginView={loginView} />
-                <div className="switchText">
-                    <p>{loginView ? words.DontHaveAccount : words.HaveAccount}</p>
-                    <h3 onClick={handleSetForm}>{loginView ? words.SignUp : words.SignIn}</h3></div>
-            </div >
+
         </>
     );
 }

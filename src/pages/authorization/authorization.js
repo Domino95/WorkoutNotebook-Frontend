@@ -16,8 +16,6 @@ const Authorization = (props) => {
     }
     return (
         <>
-            <div className="authorization_header">
-            </div>
             <div className="login_container_under" >
                 <div className="login_option_select">
                     <p>{words.HaveAccount}</p>

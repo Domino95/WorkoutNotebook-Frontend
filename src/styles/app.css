@@ -4,11 +4,13 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
   }
+ 
   a:-webkit-any-link {
     color: transparent;
     cursor: pointer;
     text-decoration: none;
   }
+  
   body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -50,4 +52,15 @@
     --font-workouts: black;
     --input_focus: black;
     --hover: #e8e8e8;
+  }
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
   }

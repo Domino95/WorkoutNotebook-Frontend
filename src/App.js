@@ -8,8 +8,8 @@ import Authorization from './pages/authorization/authorization'
 import AuthorizationMobile from './pages/authorization/authorizationMobile'
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom'
 import Main from './pages/main/main'
-
-
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 const App = () => {
   const [userId, setuserId] = useState("")
   const dispatch = useDispatch()
@@ -25,6 +25,8 @@ const App = () => {
 
   if (localStorage.getItem("theme") === "light") {
     document.documentElement.setAttribute("data-theme", "light");
+    let metaThemeColor = document.querySelector("meta[name=theme-color]");
+    metaThemeColor.setAttribute("content", '#eee');
   }
 
   const logout = () => {
