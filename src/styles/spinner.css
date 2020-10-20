@@ -9,8 +9,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-   background-color: var(--main-header-background-color);
-   border-radius: 20px;
+   background-color: var(--main-background-color);
   }
   .lds-ring div {
     z-index: 2;

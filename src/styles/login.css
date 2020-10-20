@@ -147,6 +147,13 @@ align-items: center;
 }
 
 @media (min-width: 769px){
+.desktop_background{
+width: 100vw;
+height: 100vh;
+background-color: var(--main-header-background-color);
+display: flex;
+flex-direction: column;
+}
 .login_container_under{
 display: flex;
 width: 750px;
@@ -154,7 +161,7 @@ height:400px;
 background-color:var(--background-under-color);
 border-radius: 20px;
 position: absolute;
-z-index: -1;
+z-index: 0;
 left: 50%;
 top: 50%;
 transform: translate(-50%,-50%);
@@ -249,7 +256,7 @@ border-bottom: 3px solid #ffd901;
 .authorization_background{
 position: absolute;
 margin-top: 0;
-z-index: -1;
+z-index: 0;
 left: 50px;
 top: -50px;
 width: 320px;

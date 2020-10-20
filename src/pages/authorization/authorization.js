@@ -15,8 +15,7 @@ const Authorization = (props) => {
         setloginView(!loginView)
     }
     return (
-        <>
-
+        <div className="desktop_background">
             <div className="login_container_under" >
                 <div className="login_option_select">
                     <p>{words.HaveAccount}</p>
@@ -35,7 +34,7 @@ const Authorization = (props) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 export default Authorization;
