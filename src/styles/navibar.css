@@ -1,7 +1,7 @@
 .navbar{
 bottom: 0;
 width: 100vw;
-height: 55px;
+height: 60px;
 background-color:rgba(33,33,33);
 box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 13px 0px;
 position: fixed;
@@ -27,6 +27,7 @@ outline: none;
 .nav_item{
 display: flex;
 align-items: center;
+justify-content: center;
 justify-content: flex-end;
 flex-direction: column;
 transition: 200ms ease;

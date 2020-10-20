@@ -116,7 +116,7 @@ text-align: center;
 margin: 5px;
 cursor: pointer;
 border-bottom: 1px solid gray;
-font-size: 0.8rem;
+font-size: 1rem;
 outline: none;
 color: var(--font-select-language);
 transition: 300ms ease;

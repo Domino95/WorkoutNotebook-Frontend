@@ -10,7 +10,6 @@ min-height: calc(var(--vh, 1vh) * 100 );
 }
 .previous_workouts_background_text {
  font-size:1rem;
- text-shadow: 0px 1px #999;
  letter-spacing: 1px;
  color: #ffd901;
 }
