@@ -1,12 +1,12 @@
 .authorization_background{
 display: flex;
-background: var(--main-header-background-color);
+background: var(--main-background-color);
 width: 100%;
 height: calc(var(--vh, 1vh) * 100);
 }
 .login_container{
 width: 100%;
-background: var(--main-header-background-color);
+background: var(--main-background-color);
 margin: auto;
 color: var(--font-workouts)
 }
@@ -43,7 +43,7 @@ height: 50px;
 width: 100%; 
 border: none;
 border-bottom: 1px solid #999;
-background: var(--main-header-background-color);
+background: var(--main-background-color);
 outline: none;
 padding-left: 30px;
 color: var(--font-workouts)
@@ -116,7 +116,7 @@ text-align: center;
 margin: 5px;
 cursor: pointer;
 border-bottom: 1px solid gray;
-font-size: 1rem;
+font-size: 0.8rem;
 outline: none;
 color: var(--font-select-language);
 transition: 300ms ease;
@@ -187,6 +187,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 .input_container button{
 background-color: var(--button-form-color);
 width: 50%;
@@ -253,7 +254,7 @@ left: 50px;
 top: -50px;
 width: 320px;
 height:500px;   
-background: var(--main-header-background-color);
+background: var(--main-background-color);
 border-radius: 20px;
 padding-top:0px;
 transition: 0.5s;

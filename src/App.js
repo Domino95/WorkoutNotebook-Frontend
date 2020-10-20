@@ -26,7 +26,7 @@ const App = () => {
   if (localStorage.getItem("theme") === "light") {
     document.documentElement.setAttribute("data-theme", "light");
     let metaThemeColor = document.querySelector("meta[name=theme-color]");
-    metaThemeColor.setAttribute("content", '#eee');
+    metaThemeColor.setAttribute("content", '#fff');
   }
 
   const logout = () => {

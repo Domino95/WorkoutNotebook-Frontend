@@ -39,6 +39,7 @@ align-items: center;
 flex-direction: column;
 transition: 200ms ease;
 outline: none;
+
 }
 .nav_item:hover svg{ 
   fill: #ffd901;
@@ -56,7 +57,7 @@ width: 28px;
 .nav_item:nth-child(4) svg {
 display: flex;
 height: 31px;
-width: 36px;
+width: 28px;
 }
 .link_text{
 font-weight: 200;
@@ -91,11 +92,14 @@ justify-content: unset;
 .nav_item svg{
 height: 35px;
 width: 35px;
+min-width: 40px;
 }
 
 .nav_item:nth-child(4) svg path {
   height: 40px;
   width: 40px;
+min-width: 40px;
+
 }
 
 .nav_item a { 
