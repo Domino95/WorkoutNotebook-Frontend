@@ -1,6 +1,6 @@
 export const requestRefreshToken = async () => {
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ export const addSeries = async (name, weight, reps) => {
                     }`
     }
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -104,7 +104,7 @@ export const deleteSeries = async (name, seriesId) => {
                     }`
     }
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -156,7 +156,7 @@ export const addExercise = async (exercise, handleSetAndExercise) => {
                 }`
     }
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -206,7 +206,7 @@ export const deleteExercise = async (exerciseId, handleSetAndExercise) => {
                 }`
     }
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -248,7 +248,7 @@ export const deleteTraining = async (setisLoading, trainingId, setCreateWorkout)
                     }
                     }`}
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -297,7 +297,7 @@ export const createTraining = async (setisLoading, nameWorkout) => {
                 }
                 }`}
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -347,7 +347,7 @@ export const getWorkouts = async () => {
                 }
                 }`}
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -397,7 +397,7 @@ export const getUser = async (handleSetSpinnerTrue, handleSetSpinnerFalse) => {
                 }
                 }`}
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
@@ -442,7 +442,7 @@ export const updateUser = async (name, goal, photoSource) => {
                 }
                 }`}
     try {
-        const response = await fetch('http://localhost:4000/graphql', {
+        const response = await fetch('https://calm-brushlands-68977.herokuapp.com/graphql', {
             method: 'POST',
             body: JSON.stringify(requestObject),
             headers: {
