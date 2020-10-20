@@ -156,7 +156,7 @@ width: calc(100%/7);
 }
 @media (max-width: 769px){
 .calendar_background{
-height: calc(100vh - 55px);
+min-height:calc(var(--vh, 1vh) * 100 );
 width: 100vw;
 padding-bottom: 70px;
 padding-top: 20px;

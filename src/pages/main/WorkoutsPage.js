@@ -29,7 +29,7 @@ const WorkoutsPage = () => {
                     createWorkout ? <CreateWorokut words={words} setCreateWorkout={setCreateWorkout} createTrainingFetch={createTrainingFetch} setnameWorkout={setnameWorkout} /> :
                         <div className="workouts_background">
                             <div >
-                                <svg onClick={() => setCreateWorkout(true)} height="60" viewBox="0 0 24 24" width="60"><path d="M0 0h24v24H0z" fill="none" /><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
+                                <svg onClick={() => setCreateWorkout(true)} height="45" viewBox="0 0 24 24" width="45"><path d="M0 0h24v24H0z" fill="none" /><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" /></svg>
                                 <p>{words.CreateWorkout}</p>
                             </div>
 

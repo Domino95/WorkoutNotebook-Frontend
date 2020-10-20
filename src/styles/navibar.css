@@ -50,15 +50,13 @@ transition: 100ms ease;
 }
 .nav_item svg{ 
 display: flex;
-min-width: 40px;
-height: 32px;
-width: 32px;
+height: 28px;
+width: 28px;
 }
 .nav_item:nth-child(4) svg {
 display: flex;
-min-width: 40px;
-height: 35px;
-width: 40px;
+height: 31px;
+width: 36px;
 }
 .link_text{
 font-weight: 200;

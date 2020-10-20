@@ -6,7 +6,7 @@ align-items: center;
 padding-bottom: 55px;
 min-width: 100vw;
 overflow: hidden;
-min-height: 100vh;
+min-height:calc(var(--vh, 1vh) * 100 );
 }
 .workouts_background div {
 margin-bottom: 50px;

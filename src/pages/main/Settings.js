@@ -14,11 +14,15 @@ const Settings = (props) => {
             setTheme("dark")
             localStorage.setItem("theme", "dark")
             document.documentElement.setAttribute("data-theme", undefined);
+            let metaThemeColor = document.querySelector("meta[name=theme-color]");
+            metaThemeColor.setAttribute("content", '#171717');
         }
         else {
             setTheme("light")
             localStorage.setItem("theme", "light")
             document.documentElement.setAttribute("data-theme", "light");
+            let metaThemeColor = document.querySelector("meta[name=theme-color]");
+            metaThemeColor.setAttribute("content", '#eee');
         }
     }
 
