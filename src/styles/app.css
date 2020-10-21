@@ -4,7 +4,6 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
   }
- 
   a:-webkit-any-link {
     color: transparent;
     cursor: pointer;
@@ -14,7 +13,6 @@
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     background: var(--main-background-color);
-min-height: calc(var(--vh, 1vh) * 100 );
   }
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
@@ -53,3 +51,7 @@ min-height: calc(var(--vh, 1vh) * 100 );
     --input_focus: black;
     --hover: #e8e8e8;
   }
+  input:focus .navbar{
+    width: 0 !important;
+    height: 0 !important;
+    } 

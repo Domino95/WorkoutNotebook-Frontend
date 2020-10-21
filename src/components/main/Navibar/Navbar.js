@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from "react-router-dom"
 import { useSelector } from 'react-redux'
 
+
 const Navbar = () => {
     const words = useSelector(state => state.selectLanguage)
+    const [classNaviBar, setclassNaviBar] = useState("navbar")
+    window.onresize = () => {
+        returnClassNameNavbar()
+    }
+    const returnClassNameNavbar = () => {
+        if (window.innerHeight < 500) {
+            console.log("DISABLED")
+            setclassNaviBar("navbar-disabled")
+        }
+        else {
+            console.log("ENABLED")
+            setclassNaviBar("navbar")
+        }
+    }
     return (
-        <div className="navbar">
+        < div className={classNaviBar} >
             <ul className="navbar_nav">
                 <li className="logo"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 0 24 24" fill="#ffd901" width="40"><path d="M0 0h24v24H0z" fill="none" /><path d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z" /></svg>
                 </li>
