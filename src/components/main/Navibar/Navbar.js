@@ -4,8 +4,6 @@ import { useSelector } from 'react-redux'
 
 const Navbar = () => {
     const words = useSelector(state => state.selectLanguage)
-
-
     return (
         <div className="navbar">
             <ul className="navbar_nav">
