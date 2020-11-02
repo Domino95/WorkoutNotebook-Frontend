@@ -1,18 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/oneExercise.css'
 import { useSelector } from 'react-redux'
+
+
 const OneExercise = (props) => {
     const [weight, setweight] = useState(0)
     const [reps, setreps] = useState(0)
     const [selected, setselected] = useState(undefined)
     const words = useSelector(state => state.selectLanguage)
+    useEffect(() => {
+        const handleSelected = e => {
+            if (e.target.className !== "selected_series") {
+                setselected(undefined)
+            }
+        }
+        window.addEventListener('click', handleSelected)
+
+        return () => {
+            window.removeEventListener("click", handleSelected);
+        };
+    })
 
     return (
         <>
             <div name={props.name} className="one_exercise" >
 
                 <h2 >{props.name}  <svg onClick={() => props.deleteExerciseFetch(props.exerciseId)} height="24" viewBox="0 0 24 24" width="24" fill="rgb(150 146 146)" ><path d="M0 0h24v24H0z" fill="none" /><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z" /></svg> </h2>
-                <div className="property">
+                <div className="property" >
                     <div className="column">
                         {words.series}
                         {props.series.map((item, index) => {

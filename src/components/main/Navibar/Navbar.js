@@ -11,11 +11,9 @@ const Navbar = () => {
     }
     const returnClassNameNavbar = () => {
         if (window.innerHeight < 500) {
-            console.log("DISABLED")
             setclassNaviBar("navbar-disabled")
         }
         else {
-            console.log("ENABLED")
             setclassNaviBar("navbar")
         }
     }

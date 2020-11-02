@@ -228,12 +228,13 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 800px;
+width: 769px;
 min-height: 100vh;
 margin-top: 0;
 overflow: hidden;
 padding: 40px;
 background-color: var(--main-header-background-color) !important;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 12px 0px;
 }
 .user_data input{
 font-size: 1rem;
@@ -241,7 +242,6 @@ background-color: var(--main-header-background-color) !important;
 }
 .user_data p{
 font-size: 1.2rem !important;
-
 }
 .add_photo{
 margin-left: 0 !important;
