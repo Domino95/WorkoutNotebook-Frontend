@@ -18,6 +18,16 @@ class TrainingComponent extends Component {
         exercise: ""
     }
 
+    setWorkoutName = () => {
+        if (localStorage.getItem('language') === "POLISH" && this.state.nameWorkout === "Unnamed") {
+            return "Bez nazwy"
+        }
+        else if (localStorage.getItem('language') === "ENGLISH" && this.state.nameWorkout === "Bez nazwy") {
+            return "Unnamed"
+        }
+        else return this.state.nameWorkout
+    }
+
     scrollTo = () => {
         scroller.scrollTo("add_exercises", {
         })
@@ -63,7 +73,7 @@ class TrainingComponent extends Component {
                     <div className="trainingComponent_background">
                         <div className="container" id="container">
                             <div className="logoWord"><h1 className="word_first">Workouts</h1><h1 className="word_second">Notebook</h1></div>
-                            <h2>{this.state.nameWorkout}</h2>
+                            <h2>{this.setWorkoutName()}</h2>
                             <div className="createdAt"><p> {this.props.words.CreatedAt}  </p> <p>  {new Date(this.state.createdAt).toLocaleString().slice(0, -3)} </p></div>
                             <Exercises handleSetSpinner={this.handleSetSpinner} deleteExerciseFetch={this.deleteExerciseFetch} />
                             {this.state.addExercises &&
