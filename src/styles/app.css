@@ -34,6 +34,7 @@
     --font-workouts:#969292;
     --input_focus: white;
     --hover:  #171717;;
+    --account-page-input-descripton: #ffd901;
   }
   :root[data-theme="light"]  {
     --main-background-color: #fff;
@@ -50,6 +51,8 @@
     --font-workouts: black;
     --input_focus: black;
     --hover: #e8e8e8;
+    --account-page-input-descripton: black;
+
   }
   input:focus .navbar{
     width: 0 !important;

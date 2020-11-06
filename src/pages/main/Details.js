@@ -1,6 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux'
+
 const Details = (props) => {
     document.title = "WorkoutNotebook - Details"
+    const words = useSelector(state => state.selectLanguage)
     const { name, createdAt, exercises } = props.location.state
     const setWorkoutName = () => {
         if (localStorage.getItem('language') === "POLISH" && name === "Unnamed") {
@@ -17,35 +20,35 @@ const Details = (props) => {
             <div className="container" id="container">
                 <div className="logoWord"><h1 className="word_first">Workouts</h1><h1 className="word_second">Notebook</h1></div>
                 <h2>{setWorkoutName()}</h2>
-                <div className="createdAt"><p> Created at  </p> <p>  {createdAt} </p></div>
+                <div className="createdAt"><p> {words.CreatedAt}  </p> <p>  {createdAt} </p></div>
                 {exercises.map((item, index) => {
                     return (
                         <div key={index} name={props.name} className="one_exercise">
                             <h2>{item.name}</h2>
                             <div className="property">
                                 <div className="column" >
-                                    series
+                                    {words.series}
                                     {item.series.map((item, index) => {
-                                    return (
-                                        <h3 key={index} >{index + 1}</h3>
-                                    )
-                                })}
+                                        return (
+                                            <h3 key={index} >{index + 1}</h3>
+                                        )
+                                    })}
                                 </div>
                                 <div className="column">
-                                    weight
+                                    {words.weight}
                                     {item.series.map((item, index) => {
-                                    return (
-                                        <h3 key={index}>{item.weight} kg</h3>
-                                    )
-                                })}
+                                        return (
+                                            <h3 key={index}>{item.weight} kg</h3>
+                                        )
+                                    })}
                                 </div>
                                 <div className="column">
-                                    reps
+                                    {words.reps}
                                     {item.series.map((item, index) => {
-                                    return (
-                                        <h3 key={index}>{item.reps}</h3>
-                                    )
-                                })}
+                                        return (
+                                            <h3 key={index}>{item.reps}</h3>
+                                        )
+                                    })}
                                 </div>
                             </div>
                         </div>

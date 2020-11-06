@@ -34,6 +34,7 @@ flex-direction: column;
 transition: 200ms ease;
 outline: none;
 cursor: pointer;
+width: 50px;
 }
 a.active .nav_item.circle{
   background-color: #ffd901;

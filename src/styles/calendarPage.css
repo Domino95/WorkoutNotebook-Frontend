@@ -35,7 +35,7 @@ position: absolute;
 width: 70%;
 max-width: 1000px;
 background: var(--main-header-background-color);
-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px 0px;
 color: var(--font_calendar_color);
 top:50%;
 left:50%;
@@ -186,9 +186,10 @@ text-align: center
 .calendar {
 display: block;
 position: absolute;
-width: 98%;
+width: 90%;
 background: var(--main-header-background-color);
-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 13px 0px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
+border: 1px solid var(--border-calendar);
 color: var(--font_calendar_color);
 top:25%;
 left:50%;

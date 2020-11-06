@@ -1,15 +1,24 @@
+.account_page_container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: calc(var(--vh, 1vh) * 100);
+width: 100vw;
+overflow: hidden;
+}
 .account_page_background{ 
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+padding: 10px 20px 70px 20px;
 width: 100%;
-min-height: calc(var(--vh, 1vh) * 100);
+height: 100%;
 margin-left: auto;
 margin-right: auto;
 margin-top: 3px;
 overflow: hidden;
-padding: 20px 20px 70px 20px;
 background-color: var(--main-background-color) !important;
 }
 .circle_container{
@@ -97,8 +106,8 @@ position: relative;
 width: 100%;
 text-align: left;
 font-size: 1rem !important;
-font-weight: 200 !important;
-color: #ffd901 !important;
+letter-spacing: 1px;
+color: var(--account-page-input-descripton) !important;
 }
 .user_data input{
 color: var(--font-workouts);
@@ -111,16 +120,14 @@ height: 30px !important;
 font-weight: 200 !important;
 font-family: 'Poppins', sans-serif;
 background-color: var(--main-background-color) !important;
+font-size: 15px;
 }
 .account_page_background div span{
 color: #ffd901;
-font-size: 1.5rem;
+font-size: 2rem;
 margin: 10px;
 display: flex;
 justify-content: center;
-}
-.account_page_background  p{
-color: #ffd901 !important;
 }
 .account_page_background input{
 height: 50px;
@@ -130,7 +137,7 @@ border-bottom: 2px solid #999;
 outline: none;
 background-color: var(--main-background-color);
 padding-left: 30px;
-letter-spacing: 0.5px;
+letter-spacing: 1px;
 }
 .account_page_background input::placeholder{
 color: var(--font-workouts);
@@ -193,13 +200,13 @@ background-color: #ffd901;
 }
 .account_page_background button{
 display: block;
-width: 85%;
+width: 200px;
 height: 35px;
 background-color: #ffd901;
 color: black;
 border: none;
-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 7px 0px;
-margin-top: 20px;
+box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px 0px;
+margin-top: 30px;
 cursor: pointer;
 outline: none;
 border-radius: 5px;
