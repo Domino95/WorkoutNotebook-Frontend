@@ -47,7 +47,9 @@
         "logoutInfo": "Niezapisany trening może zostać utracony",
         "logoutQuestion": "Czy chcesz konynuowac ?",
         "verify_email_text": "Potwierdź swój adres email aby kontynuować...",
-        "training_name": "Bez nazwy"
+        "training_name": "Bez nazwy",
+        "previous_page_info": "Nie masz jeszcze żadnych treningów",
+        "add_training": "Dodaj trening"
     },
     "ENGLISH": {
         "LANGUAGE": "ENGLISH",
@@ -97,6 +99,8 @@
         "logoutInfo": "Unsaved training can will be lost",
         "logoutQuestion": "Do you want to continue ?",
         "verify_email_text": "Please verify email adress to continue...",
-        "training_name": "Unnamed"
+        "training_name": "Unnamed",
+        "previous_page_info": "You don't have any training yet",
+        "add_training": "Add training"
     }
 }

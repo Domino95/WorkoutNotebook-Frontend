@@ -194,6 +194,7 @@ color: var(--font_calendar_color);
 top:25%;
 left:50%;
 transform: translate(-50%, -25% );
+margin-bottom: 65px;
 }
 .calendar .body .cell .number {
 position: absolute;

@@ -52,10 +52,13 @@ class TrainingComponent extends Component {
         this.props.setCreateWorkout(false)
     }
     addExerciseFetch = async () => {
-        this.handleSetSpinner()
-        await addExercise(this.state.exercise, this.handleSetAndExercise)
-        this.handleSetSpinner()
-        this.scrollTo()
+        if (this.state.exercise) {
+            this.handleSetSpinner()
+            await addExercise(this.state.exercise, this.handleSetAndExercise)
+            this.handleSetSpinner()
+            this.scrollTo()
+            this.setState({ exercise: "" })
+        }
     }
     deleteExerciseFetch = async (exerciseId) => {
         this.handleSetSpinner()

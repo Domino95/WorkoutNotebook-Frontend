@@ -37,7 +37,7 @@ border-bottom: 1px solid var(--font-workouts);
  display: flex;
  flex-direction: column;
  align-items: center ;
- width: 100%; 
+ width: 33%; 
  font-weight: 500;
 }
 .property .column p{ 
@@ -83,6 +83,7 @@ width: auto;
  justify-content: center; 
  align-items: center;
  margin-top: 15px;
+ position: relative;
 }
 .add_weight input{
 border: none !important;
@@ -135,7 +136,15 @@ text-align: center;
 cursor: pointer;
 outline: none;
 font-size: 1rem;
+position: absolute;
 }
+.add_weight button:nth-child(1){
+left: -5px;
+}
+.add_weight button:nth-child(3){
+right: -5px;
+}
+
 .add_reps{
 margin-top: 10px;
 display: flex;

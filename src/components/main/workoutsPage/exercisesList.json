@@ -154,6 +154,46 @@
             "id": 30,
             "value": "Pulling up wide grip",
             "name": "Pulling up wide grip"
+        },
+        {
+            "id": 31,
+            "value": "Rowing",
+            "name": "Rowing"
+        },
+        {
+            "id": 32,
+            "value": "Skull Crushers",
+            "name": "Skull Crushers"
+        },
+        {
+            "id": 33,
+            "value": "OHP",
+            "name": "OHP"
+        },
+        {
+            "id": 33,
+            "value": "Standing barbell curl",
+            "name": "Standing barbell curl"
+        },
+        {
+            "id": 34,
+            "value": "Hammer curl",
+            "name": "Hammer curl"
+        },
+        {
+            "id": 35,
+            "value": "Lateral raises",
+            "name": "Lateral raises"
+        },
+        {
+            "id": 36,
+            "value": "Pushups",
+            "name": "Pushups"
+        },
+        {
+            "id": 37,
+            "value": "Deadlift Sumo",
+            "name": "Deadlift Sumo"
         }
     ]
 }
