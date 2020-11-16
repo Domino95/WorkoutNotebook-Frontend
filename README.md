@@ -1,5 +1,5 @@
 ## WorkoutNotebook - Frontend
-Workout tracker web application - client side code
+Workout tracker web application - client side code<br/>
 App can be installed (Progressive web app)
 
 ## Technologies which i used:
