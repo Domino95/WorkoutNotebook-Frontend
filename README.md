@@ -2,6 +2,8 @@
 Workout tracker web application - client side code<br/>
 App can be installed (Progressive web app)
 
+Demo: https://admiring-fermat-7f4b6e.netlify.app/
+
 ## Technologies which i used:
 - React
 - React-router-dom
